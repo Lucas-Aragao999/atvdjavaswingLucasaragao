@@ -1,6 +1,6 @@
 package model;
 
-public class user {
+public class User {
     private String nome;
     private String cpfCnpj;
     private String email;
@@ -18,13 +18,13 @@ public class user {
     private boolean fornecedor;
     private boolean ativo;
 
-    public user() {}
+    public User() {}
 
     public String getNome() { return nome; }
     public void setNome(String nome) { this.nome = nome; }
 
     public String getCpfCnpj() { return cpfCnpj; }
-    public void setCpfCnpj(String cpfCnpj) { this.cpfCnpj = cpfCnpj; }
+    public void setCpfCnpj(String cpfCnpj) { this.cpfCnpj = cpfCpfCnpj; }
 
     public String getEmail() { return email; }
     public void setEmail(String email) { this.email = email; }

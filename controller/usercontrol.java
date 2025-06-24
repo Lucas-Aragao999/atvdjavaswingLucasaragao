@@ -1,39 +1,42 @@
 package controller;
 
-import model.Pessoa;
+import model.User; 
 
-public class usercontrol {
+public class UserControl {
 
-    public void salvarPessoa(Pessoa pessoa) {
+    public void salvarPessoa(User user) { 
         System.out.println("Pessoa salva com sucesso:");
-        System.out.println("Nome: " + pessoa.getNome());
-        System.out.println("CPF/CNPJ: " + pessoa.getCpfCnpj());
-        System.out.println("Email: " + pessoa.getEmail());
-        System.out.println("Fornecedor: " + (pessoa.isFornecedor() ? "Sim" : "Não"));
-        System.out.println("Status: " + (pessoa.isAtivo() ? "Ativo" : "Inativo"));
+        System.out.println("Nome: " + user.getNome());
+        System.out.println("CPF/CNPJ: " + user.getCpfCnpj());
+        System.out.println("Email: " + user.getEmail());
+        System.out.println("Fornecedor: " + (user.isFornecedor() ? "Sim" : "Não"));
+        System.out.println("Status: " + (user.isAtivo() ? "Ativo" : "Inativo"));
+        System.out.println("------------------------------------");
     }
 
-    public void excluirPessoa(Pessoa pessoa) {
-        System.out.println("Pessoa excluída: " + pessoa.getNome());
+    public void excluirPessoa(User user) { 
+        System.out.println("Pessoa excluída: " + user.getNome());
+        System.out.println("------------------------------------");
     }
 
-    public void limparCampos(Pessoa pessoa) {
-        pessoa.setNome("");
-        pessoa.setCpfCnpj("");
-        pessoa.setEmail("");
-        pessoa.setRg("");
-        pessoa.setOrgaoExpedidor("");
-        pessoa.setCep("");
-        pessoa.setPais("");
-        pessoa.setUf("");
-        pessoa.setMunicipio("");
-        pessoa.setLogradouro("");
-        pessoa.setNumero("");
-        pessoa.setComplemento("");
-        pessoa.setBairro("");
-        pessoa.setTelefone("");
-        pessoa.setFornecedor(false);
-        pessoa.setAtivo(true);
+    public void limparCampos(User user) { 
+        user.setNome("");
+        user.setCpfCnpj("");
+        user.setEmail("");
+        user.setRg("");
+        user.setOrgaoExpedidor("");
+        user.setCep("");
+        user.setPais("");
+        user.setUf("");
+        user.setMunicipio("");
+        user.setLogradouro("");
+        user.setNumero("");
+        user.setComplemento("");
+        user.setBairro("");
+        user.setTelefone("");
+        user.setFornecedor(false);
+        user.setAtivo(true);
         System.out.println("Campos da pessoa limpos.");
+        System.out.println("------------------------------------");
     }
-}
+}   
